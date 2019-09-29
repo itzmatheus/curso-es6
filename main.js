@@ -111,3 +111,15 @@ console.log(newArray12);
 
 const usuario2 = {...usuario, nome:'Leite'};
 console.log(usuario2);
+
+//Object Short Syntax
+const nome_usuario = 'José';
+const idade_usuario = 20;
+
+const novoUsuario = {
+    nome_usuario,
+    idade_usuario,
+    'Curso': 'Ciência da Computação'
+}
+
+console.log(novoUsuario);
