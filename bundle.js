@@ -123,3 +123,15 @@ var teste2 = function teste2() {
 };
 
 console.log(teste2());
+var usuario = {
+  nome: 'Matheus Leite',
+  idade: 20,
+  disciplinas: {
+    titulo: 'Soft Basico',
+    professor: 'Jadilson'
+  }
+};
+var nome = usuario.nome,
+    idade = usuario.idade,
+    titulo = usuario.disciplinas.titulo;
+console.log('Nome: ' + nome + ' Idade: ' + idade + ' - ' + titulo);

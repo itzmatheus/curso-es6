@@ -67,3 +67,15 @@ const teste = () => [1,2,3];
 console.log(teste());
 const teste2 = () => ({ nome: 'matheus'});
 console.log(teste2());
+
+const usuario = {
+    nome: 'Matheus Leite',
+    idade: 20,
+    disciplinas:
+        {
+            titulo: 'Soft Basico',
+            professor: 'Jadilson',
+        },
+}
+const { nome, idade, disciplinas: {titulo} } = usuario;
+console.log('Nome: ' + nome + ' Idade: ' + idade + ' - ' + titulo);
