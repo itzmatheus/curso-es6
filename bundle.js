@@ -90,3 +90,22 @@ document.getElementById('novotodo').onclick = function () {
 
 MinhaList.mostraUsuario();
 console.log('Valor de 4 + 6 = ' + Matematica.soma(4, 6));
+var arr = [1, 2, 3, 4, 5, 6];
+console.log(arr);
+var newArray = arr.map(function (item, index) {
+  return item + index;
+});
+console.log(newArray);
+var sum = arr.reduce(function (total, next) {
+  return total + next;
+}); // tatal inicialmente será 0 e o next será o primeiro elemento da lista;
+
+console.log('total: ' + sum);
+var filter = arr.filter(function (item) {
+  return item % 2 === 0;
+});
+console.log('filtro: ' + filter);
+var find = arr.find(function (item) {
+  return item === 4;
+});
+console.log('find: ' + find);
