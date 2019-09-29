@@ -92,10 +92,6 @@ MinhaList.mostraUsuario();
 console.log('Valor de 4 + 6 = ' + Matematica.soma(4, 6));
 var arr = [1, 2, 3, 4, 5, 6];
 console.log(arr);
-var newArray = arr.map(function (item, index) {
-  return item + index;
-});
-console.log(newArray);
 var sum = arr.reduce(function (total, next) {
   return total + next;
 }); // tatal inicialmente será 0 e o next será o primeiro elemento da lista;
@@ -109,3 +105,21 @@ var find = arr.find(function (item) {
   return item === 4;
 });
 console.log('find: ' + find);
+var newArray = arr.map(function (item) {
+  return item * 2;
+});
+console.log(newArray);
+
+var teste = function teste() {
+  return [1, 2, 3];
+};
+
+console.log(teste());
+
+var teste2 = function teste2() {
+  return {
+    nome: 'matheus'
+  };
+};
+
+console.log(teste2());

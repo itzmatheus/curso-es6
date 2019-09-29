@@ -43,11 +43,6 @@ console.log('Valor de 4 + 6 = '+Matematica.soma(4,6));
 
 const arr = [1,2,3,4,5,6];
 console.log(arr);
-const newArray = arr.map(function(item, index){
-    return item + index;
-})
-console.log(newArray);
-
 const sum = arr.reduce(function(total, next){
     return total + next;
 });
@@ -65,3 +60,10 @@ const find = arr.find(function(item){
 });
 
 console.log('find: ' + find);
+const newArray = arr.map(item => item * 2 );
+console.log(newArray);
+
+const teste = () => [1,2,3];
+console.log(teste());
+const teste2 = () => ({ nome: 'matheus'});
+console.log(teste2());
