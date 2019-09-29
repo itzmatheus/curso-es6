@@ -68,7 +68,7 @@ console.log(teste());
 const teste2 = () => ({ nome: 'matheus'});
 console.log(teste2());
 
-const usuario = {
+var usuario = {
     nome: 'Matheus Leite',
     idade: 20,
     disciplinas:
@@ -77,5 +77,37 @@ const usuario = {
             professor: 'Jadilson',
         },
 }
-const { nome, idade, disciplinas: {titulo} } = usuario;
+var { nome, idade, disciplinas: {titulo} } = usuario;
 console.log('Nome: ' + nome + ' Idade: ' + idade + ' - ' + titulo);
+
+//REST
+
+var usuario = {
+    nome: 'Matheus',
+    empresa: 'Nenhuma',
+    idade: 19
+}
+var {nome, ...resto} = usuario
+console.log(nome)
+console.log(resto)
+
+const [a, b, c, ...novoArray] = arr
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(novoArray)
+
+const soma = (...params) => {
+    return params.reduce((todos, item) => todos + item)
+}
+console.log(soma(1,2,3,5))
+
+//SPREAD
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+
+const newArray12 = [...arr1, ...arr2];
+console.log(newArray12);
+
+const usuario2 = {...usuario, nome:'Leite'};
+console.log(usuario2);
