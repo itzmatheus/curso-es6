@@ -25,6 +25,11 @@ class TodoList extends List {
     }
 
 }
+class Matematica {
+    static soma(a, b){
+        return a + b;
+    }
+}
 
 var MinhaList = new TodoList();
 
@@ -33,3 +38,5 @@ document.getElementById('novotodo').onclick = function(){
 }
 
 MinhaList.mostraUsuario();
+
+console.log('Valor de 4 + 6 = '+Matematica.soma(4,6));

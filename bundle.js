@@ -65,6 +65,23 @@ function (_List) {
   return TodoList;
 }(List);
 
+var Matematica =
+/*#__PURE__*/
+function () {
+  function Matematica() {
+    _classCallCheck(this, Matematica);
+  }
+
+  _createClass(Matematica, null, [{
+    key: "soma",
+    value: function soma(a, b) {
+      return a + b;
+    }
+  }]);
+
+  return Matematica;
+}();
+
 var MinhaList = new TodoList();
 
 document.getElementById('novotodo').onclick = function () {
@@ -72,3 +89,4 @@ document.getElementById('novotodo').onclick = function () {
 };
 
 MinhaList.mostraUsuario();
+console.log('Valor de 4 + 6 = ' + Matematica.soma(4, 6));
